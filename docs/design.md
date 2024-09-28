@@ -17,3 +17,13 @@
 ### MXNS
 
 The MXNS (Mexican Peso by SAFT.Industries) stablecoin. In the hackathon version, clearly is not connected to any actual banking service, so it's just a mock version.
+
+### GIOPAY PROGRAM
+
+The on-chain Solana program to execute the payments.
+
+### GIOPAY BACKEND
+
+The Node backend service to process all operations.
+
+
