@@ -15,6 +15,6 @@ router.post('/users', createUser);
 router.delete('/users/:id', deleteUser);
 */
 
-router.put('/tx/:id', executePayment);
+router.post('/payments', executePayment);
 
 export default router;

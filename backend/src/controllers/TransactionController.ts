@@ -1,13 +1,14 @@
 import { Request, Response } from 'express';
 import { clusterApiUrl, Connection, Keypair, LAMPORTS_PER_SOL } from '@solana/web3.js';
 import { createMint, getOrCreateAssociatedTokenAccount, mintTo, transfer } from '@solana/spl-token';
+import {Config} from "../utils/config.js";
 
 export const executePayment = async (req: Request, res: Response) => {
     // Transfers some token from the buyer to the seller.
 
     // Connect to cluster
-    const connection = new Connection(clusterApiUrl('devnet'), 'confirmed');
-
+    const connection = new Connection(Config.rpcNode, 'confirmed');
+    console.log('hash', (await connection.getLatestBlockhash()));
 
 };
 
