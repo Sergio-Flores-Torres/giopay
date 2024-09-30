@@ -1,6 +1,6 @@
 {
   "name": "giopay-backend",
-  "version": "0.0.1",
+  "version": "0.0.2",
   "description": "Giopay Node backend to support all system operations",
   "main": "index.js",
   "scripts": {

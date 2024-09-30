@@ -132,4 +132,8 @@ dist
 # Mac
 .DS_Store
 
+# Web3 Keys
+test/*.json
+
+
 
