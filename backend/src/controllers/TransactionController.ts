@@ -12,7 +12,7 @@ export const executePayment = async (req: Request, res: Response) => {
 };
 
 
-
+/*
 (async () => {
 
     // Generate a new wallet keypair and airdrop SOL
@@ -66,3 +66,4 @@ export const executePayment = async (req: Request, res: Response) => {
     );
     console.log('transfer tx:', signature);
 })();
+*/

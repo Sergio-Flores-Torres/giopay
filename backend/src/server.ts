@@ -1,5 +1,5 @@
 import express, { Request, Response } from 'express';
-import txRoutes from './routes/TransactionRoutes';
+import txRoutes from './routes/TransactionRoutes.js';
 
 const app = express();
 
@@ -11,6 +11,8 @@ app.get('/', (req: Request, res: Response) => {
 
 app.use('/api', txRoutes);
 
-app.listen(3000, () => {
-  console.log('Server is running on port 3000');
+const port = parseInt(process.env.PORT || "3000");
+
+app.listen(port, () => {
+  console.log("Server is running on port " + port.toString());
 });

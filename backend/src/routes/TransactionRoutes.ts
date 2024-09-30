@@ -1,7 +1,7 @@
 import express from 'express';
 import {
 executePayment,
-} from '../controllers/TransactionController';
+} from '../controllers/TransactionController.js';
 
 const router = express.Router();
 
