@@ -3,11 +3,24 @@ import { clusterApiUrl, Connection, Keypair, LAMPORTS_PER_SOL } from '@solana/we
 import { createMint, getOrCreateAssociatedTokenAccount, mintTo, transfer } from '@solana/spl-token';
 import {Config} from "../utils/config.js";
 
+// Creates a wallet to own the ATA for the user tokens.
+export const createWallet = async (req: Request, res: Response) => {
+    console.log("createWallet");
+
+    const newWallet = Keypair.generate();
+    const answer = {
+        public: newWallet.publicKey.toBase58(),
+        private: newWallet.secretKey.toString()
+    }
+
+    res.send({"status": "ok", "data": answer});
+};
+
 export const executePayment = async (req: Request, res: Response) => {
     // Transfers some token from the buyer to the seller.
 
     // Connect to cluster
-    const connection = new Connection(Config.rpcNode, 'confirmed');
+    const connection = new Connection(Config.rpcNode, Config.confirmLvl);
     console.log('hash', (await connection.getLatestBlockhash()));
 
 };

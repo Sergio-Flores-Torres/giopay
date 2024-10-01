@@ -1,7 +1,8 @@
 import express from 'express';
 import {
-executePayment,
+executePayment, createWallet,
 } from '../controllers/TransactionController.js';
+import { checkApiKey } from "../utils/auth.js";
 
 const router = express.Router();
 
@@ -16,5 +17,6 @@ router.delete('/users/:id', deleteUser);
 */
 
 router.post('/payments', executePayment);
+router.post('/wallets', checkApiKey, createWallet);
 
 export default router;
