@@ -20,3 +20,9 @@ MXNS ATA 2ND HOLDER 6nnrAFgkwGwLErYTJaUHP6W3QeSV6XWanx2gakiSsp6g
 
 BUYER B2hv5LxMJuMkZo9FuHTTf3S5PzZUuZ5ohqBnEsKMFfnY
 SELLER 9tHChTNsQeWpGoeD9Nzmi1boWPJoLd9mQ2rAnrWRyb9n
+
+# NFC ANDROID HCE
+
+The AID is custom, to indicate this is an entirely proprietary app solution (not participant on any public NFC network)
+
+AID F0 53 41 46 54
